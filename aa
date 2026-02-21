@@ -1,0 +1,18 @@
+{
+  "name": "52书库",
+  "host": "www.52shuku.net",
+  "group": "小说",
+  "contentType": 0,
+  "enabled": 1,
+  "weight": 100,
+  "searchUrl": "https://www.52shuku.net/so/search.php?q=%@keyWord",
+  "searchList": "//article[@class='excerpt']",
+  "searchName": "//header/h2/a/h4/text() || @js:return result.replace(/^\\d+\\.\\s*/, '').replace(/<\\/?em>/g, '');",
+  "searchDetail": "//header/h2/a/@href",
+  "bookName": "//h1[@class='article-title']/text()",
+  "bookDetail": "//article[@class='article-content']/p[1]/text()",
+  "chapterList": "//ul[@class='list clearfix']/li[@class='mulu']",
+  "chapterName": "//a/text()",
+  "chapterUrl": "//a/@href",
+  "contentItems": "//div[@id='text']/p/text()"
+}
